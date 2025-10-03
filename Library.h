@@ -8,8 +8,8 @@
 
 class Library {
 private:
-    std::vector<Book> books;   // ✅ define books here
-    std::vector<User> users;   // ✅ define users here
+    std::vector<Book> books;   // define books here
+    std::vector<User> users;   // define users here
 
 public:
     Library() = default;
@@ -35,3 +35,4 @@ public:
 };
 
 #endif
+
