@@ -11,10 +11,10 @@ using namespace std;
 // Simple assert helper
 void assertTrue(bool cond, const string &msg) {
     if (!cond) {
-        cerr << "❌ TEST FAILED: " << msg << endl;
+        cerr << "TEST FAILED: " << msg << endl;
         exit(1); // terminate immediately if a test fails
     } else {
-        cout << "✅ " << msg << endl;
+        cout << "Success " << msg << endl;
     }
 }
 
@@ -74,6 +74,7 @@ int main() {
     assertTrue(lib.returnBook(200,2,out), out);
     assertTrue(lib.removeUser(200,out), out);
 
-    cout << "\n🎉 All tests passed successfully!\n";
+    cout << "\n All tests passed successfully!\n";
     return 0;
 }
+
