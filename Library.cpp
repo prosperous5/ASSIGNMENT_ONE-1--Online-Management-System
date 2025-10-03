@@ -14,7 +14,7 @@ bool Library::addBook(const Book& book, string &msg) {
             return false;
         }
     }
-    books.push_back(book);   // ✅ now books exists
+    books.push_back(book);   // now books exists
     msg = "Book added.";
     return true;
 }
@@ -146,3 +146,4 @@ bool Library::returnBook(int userId, int bookId, string &msg) {
     msg = "User not found.";
     return false;
 }
+
